@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  /*background: url('images/background.png') #edeff0;*/
+  background: url('svgs/background.svg') #edeff0;
+  background-size: 53px 50px;
+  background-repeat: repeat;
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  }
+  a:hover {
+    color: #111;
+  }
+  a:hover .st3 {
+    fill: #111;
+  }
+
+header {
+  padding-top: 10px;
+}
+  header nav {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+   header nav ul li:hover {
+    animation: bounce .5s;
+   }
+  header nav svg {
+    width: 14px;
+  }
+  header h1 {
+    line-height: 1em;
+  }
+  header #logo {
+    margin-bottom: 2em;
+  }
+  header #logo-text-svg {
+    opacity: 0;
+  }
+  header #logo-text {
+    font-size: 1em;
+    color: #EAAA7F;
+  }
+  header svg {
+    width: 25%;
+    /*width: 140px;
+    height: 120px;*/
+  }
+  #logo svg:hover #logo-paw {
+    transition: transform .2s;
+  }
+  #logo svg:hover #logo-paw {
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+  }
+
+main {
+  padding-top: 50px;
+}
+  main h2 {
+  font-size: 28px;
+}
+  main ul {
+    padding: 0;
+  }
+    main li {
+      display: inline-block;
+      color: #ba8058;
+      margin-right: 20px;
+    }
+      main li svg {
+        margin-bottom: 15px;
+      }
+      .corgi-image {
+        width: 170px;
+        transition: transform .2s ease-out;
+      }
+      .corgi-image:hover {
+        transform: rotateZ(-15deg);
+      }
+      main li span {
+        margin-left: -40px;
+      }
+      main li:last-child {
+        margin-right: 0;
+      }
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+
+/* SVG Colors*/
+
+.st0{fill:#BA8058;}
+.st1{fill:#EAAA7F;}
+.st2{fill:#F4C6A6;}
+.st3{fill:#39ADD1;}
+.st4{fill:#FBFEFF;}
+.st5{fill:#2D3339;}
+.st6{fill:#844B24;}
+.st7{fill:#52595F;}
+
+
+/* Keyframes */
+
+@keyframes bounce {
+
+  30% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 420px) {
+
+  header #logo-text-svg {
+    opacity: 1;
+  }
+  header #logo-text {
+    display: none;
+  }
+
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+  header svg {
+    width: 15%;
+  }
+}
